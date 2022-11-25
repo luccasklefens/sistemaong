@@ -1,36 +1,85 @@
-   .menu-principal {
-    background-color:black;
-    height: 100px;
-  }
+* {
+  margin: 0;
+}
 
-  .logo {
-    max-width:200px;
-    max-height:150px;
-    width: auto;
-    height: auto;
-    margin-top: -28px;
-    margin-left: 25px;
-    text-align: left;
-  }
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  background-color: #fafbfc;
+}
 
-  table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-  }
-  
-  td, th {
-    border: 1px solid #dddddd;
-    text-align: left;
-    padding: 8px;
-  }
-  
-  tr:nth-child(even) {
-    background-color: #dddddd;
-  }
+header {
+  background-color: blueviolet;
+  padding: 10;
+  color: white;
+  text-align: center;
+}
 
-  .menu {
-    padding: right;
-    margin-right: 30px;
+main {
+  padding: 30px 50px;
+}
 
-  }
+.card {
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.lineInput {
+  display: grid;
+  margin-bottom: 10px;
+}
+
+input {
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+}
+
+button {
+  border: 0px;
+  padding: 10px;
+  outline: 0;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 3px;
+  font-weight: bold;
+  transition: all ease 0.3s;
+}
+
+button:hover {
+  background-color: rgb(63, 21, 102);
+}
+
+.content {
+  margin-top: 15px;
+}
+
+table {
+  border-collapse: collapse;
+  border: 1px solid #ccc;
+  width: 100%;
+}
+
+table th {
+  background-color: rgb(214, 214, 214);
+}
+
+table th, td {
+  padding: 1px 5px;
+  text-align: left;
+}
+
+table td img {
+  width: 22px;
+}
+
+.imgdel {
+  text-align: center;
+  padding-top: 4px;
+}
+
+.center {
+  text-align: center;
+}

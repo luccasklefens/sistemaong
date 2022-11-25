@@ -5,14 +5,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
 
-        <title>Love Pet</title>
+        <title>Love Pet - Animais</title>
 
-        <link rel="stylesheet" href="./css/main.css" />
+        <link rel="stylesheet" href="../../../css/main.css" />
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
 
-        <script src="main.js"></script>
+        <script src="./animais.js"></script>
     </head>
     <body>
 
@@ -22,33 +22,38 @@
 
         <main>
             <div class="title">
-                <h2>Voluntários</h2>
-                <span>Lista de voluntários.</span>
+                <h2>Animais</h2>
+                <span>Lista de animais.</span>
             </div>
             <div class="card">
                 <div class="lineInput">
-                    <label>Nome</label>
-                    <input type="text" id="nome">
+                    <label>Tipo</label>
+                    <input type="text" id="tipo">
                 </div>
                 <div class="lineInput">
-                    <label>Celular</label>
-                    <input type="text" id="celular">
+                    <label>Raça</label>
+                    <input type="text" id="raca">
                 </div>
                 <div class="lineInput">
-                    <label>E-mail</label>
-                    <input type="text" id="email">
+                    <label>Peso</label>
+                    <input type="text" id="peso">
                 </div>
-                <button onclick="voluntario.salvar()">Salvar</button>
-                <button onclick="voluntario.cancelar()">Cancelar</button>
+                <div class="lineInput">
+                    <label>Porte</label>
+                    <input type="text" id="porte">
+                </div>
+                <button onclick="animal.salvar()">Salvar</button>
+                <button onclick="animal.cancelar()">Cancelar</button>
             </div>
 
             <div class="content">
                 <table border="1">
                     <thead>
                         <th class="center">ID</th>
-                        <th>Nome</th>
-                        <th>Celular</th>
-                        <th>E-mail</th>
+                        <th>Tipo</th>
+                        <th>Raça</th>
+                        <th>Peso</th>
+                        <th>Porte</th>
                         <th class="center">Ações</th>
                     </thead>
                     <tbody id="tbody">
