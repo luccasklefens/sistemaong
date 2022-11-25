@@ -37,11 +37,16 @@ class Voluntario {
             td_id.classList.add('center');
 
             td_acoes.classList.add('imgdel');
+            td_acoes.classList.add('imgedit');
+
+            let imgEdit = document.createElement('img');
+            imgEdit.src = '../../../img/edit.png';
 
             let imgDelete = document.createElement('img');
             imgDelete.src = '../../../img/bin.png';
             imgDelete.setAttribute("onclick", "voluntario.deletar("+ this.arrayVoluntarios[i].id +")");
 
+            td_acoes.appendChild(imgEdit);
             td_acoes.appendChild(imgDelete);
         }
     }

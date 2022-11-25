@@ -18,44 +18,18 @@
 
         <header>
             <div>
-                <img src="./img/logo.png" class="imglogo">
+                <img src="./img/logo.png" class="imglogo" onclick="homePage()">
             </div>
         </header>
 
         <main>
-            <div class="title">
-                <h2>Voluntários</h2>
-                <span>Lista de voluntários.</span>
-            </div>
-            <div class="card">
-                <div class="lineInput">
-                    <label>Nome</label>
-                    <input type="text" id="nome">
+            <div class="cardprincipal">
+                <div class="boataoprincipal1" onclick="paginaVoluntarios()">
+                    <div class="botaovoluntario">Voluntários</div>
                 </div>
-                <div class="lineInput">
-                    <label>Celular</label>
-                    <input type="text" id="celular">
+                <div class="boataoprincipal2" onclick="paginaAnimais()">
+                    <div class="botaoanimais">Animais</div>
                 </div>
-                <div class="lineInput">
-                    <label>E-mail</label>
-                    <input type="text" id="email">
-                </div>
-                <button onclick="voluntario.salvar()">Salvar</button>
-                <button onclick="voluntario.cancelar()">Cancelar</button>
-            </div>
-
-            <div class="content">
-                <table border="1">
-                    <thead>
-                        <th class="center">ID</th>
-                        <th>Nome</th>
-                        <th>Celular</th>
-                        <th>E-mail</th>
-                        <th class="center">Ações</th>
-                    </thead>
-                    <tbody id="tbody">
-                    </tbody>
-                </table>
             </div>
         </main>
     </body>
