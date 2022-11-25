@@ -39,7 +39,7 @@ class Voluntario {
             td_acoes.classList.add('imgdel');
 
             let imgDelete = document.createElement('img');
-            imgDelete.src = '../../../img/bin.png';
+            imgDelete.src = './img/bin.png';
             imgDelete.setAttribute("onclick", "voluntario.deletar("+ this.arrayVoluntarios[i].id +")");
 
             td_acoes.appendChild(imgDelete);
